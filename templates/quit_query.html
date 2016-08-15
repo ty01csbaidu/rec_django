@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quit Query</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/4.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+        .col-center-block {
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+<body>
+<div id="loginModal" class="model show">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h1 class="text-center text-primary">退出推荐查询</h1>
+        {% if error %}
+            <p style="color: red;">Please submit a search term</p>
+        {% endif %}
+    </div>
+    <div class="modal-body">
+<form action="" method="get" class="form col-md-12 center-block">
+    <div class="form-group">
+        <input type="text" name="vid" class="form-control input-lg">
+    </div>
+    <div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">提交</button>
+        </div>
+</form>
+        </div>
+    <div class="modal-footer">
+
+      </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
