@@ -31,5 +31,19 @@ def quit_visualize(request):
 	return render_to_response('quit_query.html', {'error': error})
 
 
+def content_visualize(request):
+	error = False
+	if 'vid' in request.GET:
+		vid = request.GET['vid']
+		if not vid:
+			error = True
+		else:
+			results = simulate_rec_request('http://10.100.5.104/content','key',vid)
+			video_infos = Sndlvl.objects.filter(id__in=results)
+			query_vid = Sndlvl.objects.filter(id=vid)
+			return render_to_response('quit_visualize.html', {'rec_results':video_infos, 'query':query_vid[0]})
+	return render_to_response('quit_query.html', {'error': error})
+
+
 def boot(request):
 	return render_to_response('bootstrap_test.html')
