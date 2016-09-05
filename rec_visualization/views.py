@@ -24,10 +24,12 @@ def quit_visualize(request):
 		if not vid:
 			error = True
 		else:
-			results = simulate_rec_request('http://api.dev.hifuntv.com/quit','key',vid)
+			results = simulate_rec_request('http://10.100.5.104/quit','key',vid)
 			video_infos = Sndlvl.objects.filter(id__in=results)
+			video_infos = dict([(video.id, video) for video in video_infos])
+			sorted_video_infos = [video_infos[idx] for idx in results]
 			query_vid = Sndlvl.objects.filter(id=vid)
-			return render_to_response('quit_visualize.html', {'rec_results':video_infos, 'query':query_vid[0]})
+			return render_to_response('quit_visualize.html', {'rec_results':sorted_video_infos, 'query':query_vid[0]})
 	return render_to_response('quit_query.html', {'error': error})
 
 
@@ -40,8 +42,10 @@ def content_visualize(request):
 		else:
 			results = simulate_rec_request('http://10.100.5.104/content','key',vid)
 			video_infos = Sndlvl.objects.filter(id__in=results)
+			video_infos = dict([(video.id, video) for video in video_infos])
+			sorted_video_infos = [video_infos[idx] for idx in results]
 			query_vid = Sndlvl.objects.filter(id=vid)
-			return render_to_response('quit_visualize.html', {'rec_results':video_infos, 'query':query_vid[0]})
+			return render_to_response('quit_visualize.html', {'rec_results':sorted_video_infos, 'query':query_vid[0]})
 	return render_to_response('quit_query.html', {'error': error})
 
 
