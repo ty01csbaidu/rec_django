@@ -20,10 +20,25 @@
             </thread>
             <tbody>
                 <tr>
-                    <td>query</td>
+                    <td>{{ lics }}</td>
                 </tr>
             </tbody>
         </table>
+        {% if history %}
+            <table class="table table-striped">
+                <tbody>
+                {% for item in history %}
+                    <tr>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.desc }}</td>
+                        <td>{{ item.fstlvl_id }}</td>
+                        <td>{{ item.tag }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+        <h2>break line</h2>
         {% if rec_results %}
             <table class="table table-striped">
                 <tbody>
