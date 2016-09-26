@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^quit/', views.quit_visualize),
     url(r'^boot/', views.boot),
-    url(r'^content/', views.content_visualize)
+    url(r'^content/', views.content_visualize),
+    url(r'^personal/', views.user_visualize)
 ]

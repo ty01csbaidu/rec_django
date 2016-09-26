@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quit Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.bootcss.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/4.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+       <h2>You searched for:</h2>
+        <table class="table table-striped">
+            <thread>
+                <tr>
+                    <th>user</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>query</td>
+                </tr>
+            </tbody>
+        </table>
+        {% if rec_results %}
+            <table class="table table-striped">
+                <tbody>
+                    {% for result in rec_results %}
+                        <tr>
+                            <td>{{ result.id }}</td>
+                            <td>{{ result.desc }}</td>
+                            <td>{{ result.fstlvl_id }}</td>
+                            <td>{{ result.tag }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    </div>
+    <input type="button" name="Submit" onclick="javascript:history.back(-1);" value="返回上一页">
+
+</body>
+</html>
