@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff0351fe-fdc1-4133-877b-442164a05914" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rec_visualization/views.py" afterPath="$PROJECT_DIR$/rec_visualization/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/homePage_visualize.html" afterPath="$PROJECT_DIR$/templates/homePage_visualize.html" />
     </list>
     <ignored path="rec_django.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rec_visualization/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="90" column="79" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
+            <state relative-caret-position="324">
+              <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -72,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homePage_visualize.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homePage_visualize.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/homePage_visualize.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -160,8 +158,8 @@
         <option value="$PROJECT_DIR$/templates/quit_query.html" />
         <option value="$PROJECT_DIR$/templates/quit_visualize.html" />
         <option value="$PROJECT_DIR$/rec_django/urls.py" />
-        <option value="$PROJECT_DIR$/rec_visualization/views.py" />
         <option value="$PROJECT_DIR$/templates/homePage_visualize.html" />
+        <option value="$PROJECT_DIR$/rec_visualization/views.py" />
       </list>
     </option>
   </component>
@@ -1009,21 +1007,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rec_visualization/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/homePage_visualize.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="90" column="79" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/homePage_visualize.html">
+    <entry file="file://$PROJECT_DIR$/rec_visualization/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="324">
+          <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

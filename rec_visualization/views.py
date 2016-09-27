@@ -48,7 +48,7 @@ def quit_visualize(request):
 		if not vid:
 			error = True
 		else:
-			results = simulate_rec_request('http://10.100.5.104/homePage/personal','params',vid)
+			results = simulate_rec_request('http://10.100.5.104/quit','key',vid)
 			video_infos = Sndlvl.objects.filter(id__in=results)
 			video_infos = dict([(video.id, video) for video in video_infos])
 			sorted_video_infos = [video_infos[idx] for idx in results]
